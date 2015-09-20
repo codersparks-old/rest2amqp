@@ -1,0 +1,27 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html >
+<head>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<script src="angular/angular.min.js"></script>
+	<script src="angular/angular-route.min.js"></script>
+	<script src="angular/angular-strap.min.js"></script>
+	<script src="angular/angular-strap.tpl.min.js"></script>
+	<script src="site/script.js"></script>
+</head>
+<body ng-app="r2aApp">
+	<nav class="navbar navbar-inverse" role="navigation" bs-navbar>
+	  <div class="navbar-header">
+	    <a class="navbar-brand" href="#">Rest2Amqp</a>
+	  </div>
+	  <ul class="nav navbar-nav">
+	    <li data-match-route="#/"><a href="#/">Home</a></li>
+	    <li data-match-route="#/queue"><a href="#/queue">Queue Management</a></li>
+	    <li data-match-route="#/message"><a href="#/message">Send/Receive Message</a></li>
+	  </ul>
+	</nav>
+	
+	<!-- This will be where the page templates are loaded -->
+	<div ng-view></div>
+</body>
+</html>

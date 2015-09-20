@@ -1,0 +1,47 @@
+<div class="jumbotron">
+	<div class="container">
+		<h1>Add/Remove Queue</h1>
+		<p>Use the controls below to add/remove queues</p>
+	</div>
+</div>
+
+<div class="container">
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">Add Queue</h3>
+		</div>
+		<div class="panel-body" ng-controller="addQueueController">
+			<form ng-submit="processForm()">
+				<div id="add-queue-name-group" class="form-group">
+					<label>Queue Name</label> <input type="text" name="queueName"
+						class="form-control" placeholder="Queue Name"
+						ng-model="formData.queueName"> <span class="help-block"></span>
+				</div>
+				<button type="submit" class="btn btn-info" ng-click="action='add'">Add Queue</button>
+				<button type="submit" class="btn btn-info" ng-click="action='remove'">Remove Queue</button>
+			</form>
+			<span id="queueResult"></span>
+				
+		</div>
+	</div>
+	
+	<!-- <div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title">remove Queue</h3>
+		</div>
+		<div class="panel-body" ng-controller="delQueueController">
+			<form ng-submit="processForm()">
+				<div id="del-queue-name-group" class="form-group">
+					<label>Queue Name</label> <input type="text" name="queueName"
+						class="form-control" placeholder="Queue Name"
+						ng-model="formData.queueName"> <span class="help-block"></span>
+				</div>
+				<button type="submit" class="btn btn-info">Remove Queue</button>
+			</form>
+			<span id="delQueueResult"></span>
+				
+		</div>
+	</div>
+	 -->
+</div>
